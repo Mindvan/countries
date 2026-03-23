@@ -120,12 +120,16 @@ function CountryCard({ data }: CountryCardProps) {
     setNativeNamesHeight(Math.round(elNativeNames.getBoundingClientRect().height / 17))
   }, [])
 
+  function handleClick(value: Country) {
+    navigate(`/country/${value.name.common}`);
+  }
+
   return (
     <Card
       className={isHovered ? 'active' : undefined}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      onClick={() => navigate(`/country/${data.cca3}`)}
+      onClick={() => handleClick(data)}
       $titleHeight={titleHeight}
       $nativeNamesHeight={nativeNamesHeight}
     >

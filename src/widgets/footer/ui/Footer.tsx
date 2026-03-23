@@ -32,23 +32,6 @@ const Credits = styled.small`
   color: #64748b;
 `
 
-const Link = styled.a`
-  font-size: 0.8125rem;
-  color: #475569;
-  text-decoration: none;
-  transition: color 0.15s ease;
-
-  &:hover {
-    color: #0f172a;
-  }
-
-  &:focus-visible {
-    outline: 2px solid #6366f1;
-    outline-offset: 2px;
-    border-radius: 6px;
-  }
-`
-
 export function Footer() {
   const year = new Date().getFullYear()
 

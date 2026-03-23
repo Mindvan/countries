@@ -11,7 +11,7 @@ export const routeConfig: RouteObject[] = [
     children: [
       { index: true, element: <Home /> },
       { path: 'login', element: <Login /> },
-      { path: 'country/:cca3', element: <CountryInfo /> },
+      { path: 'country/:name', element: <CountryInfo /> },
     ],
   },
 ]
