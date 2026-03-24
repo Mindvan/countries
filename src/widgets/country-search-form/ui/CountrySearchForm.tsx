@@ -6,33 +6,25 @@ const Root = styled.form`
   max-width: 320px;
 `
 
-const Label = styled.label`
-  display: block;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #64748b;
-  margin-bottom: 0.35rem;
-`
-
 const Input = styled.input`
   width: 100%;
   padding: 0.5rem 0.75rem;
-  font-size: 0.875rem;
-  border: 1px solid #e2e8f0;
+  font-size: 0.75rem;
+  border: 1px solid var(--color-border);
   border-radius: 8px;
-  background: #fff;
-  color: #0f172a;
+  background: var(--color-surface);
+  color: var(--color-text);
   outline: none;
   transition:
     border-color 0.15s ease,
     box-shadow 0.15s ease;
 
   &::placeholder {
-    color: #94a3b8;
+    color: var(--color-text-muted);
   }
 
   &:focus {
-    border-color: #6366f1;
+    border-color: var(--color-outline);
     box-shadow: 0 0 0 3px rgb(99 102 241 / 18%);
   }
 `
@@ -50,12 +42,11 @@ export function CountrySearchForm({ value, onChange }: CountrySearchFormProps) {
         e.preventDefault()
       }}
     >
-      <Label htmlFor="country-search">Поиск по названию</Label>
       <Input
         id="country-search"
         type="search"
         autoComplete="off"
-        placeholder="Например, Russia"
+        placeholder="Поиск по названию"
         value={value}
         onChange={(e) => onChange(e.target.value)}
       />

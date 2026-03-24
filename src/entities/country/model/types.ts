@@ -6,7 +6,7 @@ export type CountryNameBase = {
 export type CountryNativeNames = Record<string, CountryNameBase>
 
 export type CountryNameMain = CountryNameBase & {
-  nativeName: CountryNativeNames
+  nativeName?: CountryNativeNames
 }
 
 export type CountryCurrency = {

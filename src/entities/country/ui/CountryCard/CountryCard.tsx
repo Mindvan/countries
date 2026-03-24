@@ -13,12 +13,17 @@ const Body = styled.div<{ $titleHeight: number, $nativeNamesHeight: number }>`
   flex-direction: column;
   transition: height 0.35s ease;
   transform: translateY(${({ $titleHeight }) => `${(15 - (($titleHeight - 1) * BODY_HEIGHT_TRANSFORM))}px`});
-  background: white;
+  background: var(--color-surface);
   transition: transform 0.35s ease;
+
+  h3 {
+    color: var(--color-text);
+  }
 
   p {
     transform: translateY(${({ $nativeNamesHeight }) => `${NATIVE_HEIGHT_TRANSFORM * $nativeNamesHeight}px`});
     transition: all 0.4s ease;
+    color: var(--color-text-muted);
   }
 `
 
@@ -43,7 +48,7 @@ const Card = styled.div<{ $titleHeight: number, $nativeNamesHeight: number }>`
   display: flex;
   flex-direction: column;
   border-radius: 12px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid var(--color-border);
   overflow: hidden;
   box-shadow: 0 1px 3px rgb(15 23 42 / 8%);
   cursor: pointer;

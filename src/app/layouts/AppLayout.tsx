@@ -1,5 +1,7 @@
 import { Outlet } from 'react-router-dom'
+import { useContext } from 'react'
 import styled from 'styled-components'
+import { ThemeContext } from '../providers/ThemeProvider/model/themeContext'
 import { Footer } from '../../widgets/footer'
 import { Header } from '../../widgets/header'
 
@@ -7,7 +9,7 @@ const Page = styled.div`
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  background: #f8fafc;
+  background: var(--color-bg);
 `
 
 const Container = styled.div`
@@ -22,8 +24,10 @@ const Container = styled.div`
 `
 
 export const AppLayout = () => {
+  const { theme } = useContext(ThemeContext)
+
   return (
-    <Page>
+    <Page data-theme={theme}>
       <Header />
       <Container>
         <Outlet />

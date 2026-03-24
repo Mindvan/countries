@@ -6,15 +6,15 @@ const Bar = styled.footer`
   right: 0;
   bottom: 0;
   z-index: 40;
-  border-top: 1px solid #e2e8f0;
-  background: #fff;
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface);
   box-shadow: 0 -1px 0 rgb(15 23 42 / 4%);
 `
 
 const Inner = styled.div`
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0.9rem 1.25rem 1rem;
+  padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,13 +23,13 @@ const Inner = styled.div`
   @media (max-width: 640px) {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.45rem;
+    gap: 0.5rem;
   }
 `
 
 const Credits = styled.small`
-  font-size: 0.8125rem;
-  color: #64748b;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
 `
 
 export function Footer() {
@@ -38,7 +38,7 @@ export function Footer() {
   return (
     <Bar>
       <Inner>
-        <Credits>{year} Ivan Eroshin</Credits>
+        <Credits>{year} Ivan Eroshin. Использованы данные из API <a style={{ color: 'var(--color-text)' }} href="https://restcountries.com/" target="_blank" rel="noopener noreferrer">REST Countries</a></Credits>
       </Inner>
     </Bar>
   )

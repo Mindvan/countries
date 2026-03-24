@@ -8,3 +8,7 @@ export type {
   CountryNativeNames,
   CountryReligion,
 } from './model/types'
+export {
+  getCountryNameByCode,
+  setCountryNameByCodeMap,
+} from './model/countryNameByCode'
