@@ -35,7 +35,6 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 640px) {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.5rem;
   }
 `,Qa=V.small`
   font-size: 0.75rem;
@@ -95,17 +94,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   ${eo}
   display: inline-block;
   text-decoration: none;
-`,oo=V.span`
-  @media (max-width: 520px) {
-    display: none;
-  }
-`,so=V.span`
-  display: none;
-
-  @media (max-width: 520px) {
-    display: inline;
-  }
-`,co=()=>{let e=(0,Bn.c)(16),{theme:t,toggleTheme:n}=(0,C.useContext)(Ha),{username:r,logout:i}=(0,C.useContext)(Ba),a=t===`light`?`Переключить на тёмную тему`:`Переключить на светлую тему`,o=t===`light`?`Тема: Светлая`:`Тема: Тёмная`,s;e[0]===o?s=e[1]:(s=(0,H.jsx)(ro,{children:o}),e[0]=o,e[1]=s);let c=t===`light`?`☀`:`☾`,l;e[2]===c?l=e[3]:(l=(0,H.jsx)(io,{"aria-hidden":!0,children:c}),e[2]=c,e[3]=l);let u;e[4]!==s||e[5]!==l||e[6]!==a||e[7]!==n?(u=(0,H.jsxs)(no,{type:`button`,onClick:n,"aria-label":a,children:[s,l]}),e[4]=s,e[5]=l,e[6]=a,e[7]=n,e[8]=u):u=e[8];let d;e[9]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,H.jsxs)(ao,{to:`/`,"aria-label":`Главная`,children:[(0,H.jsx)(oo,{children:`Главная`}),(0,H.jsx)(so,{"aria-hidden":!0,children:`Гл.`})]}),e[9]=d):d=e[9];let f;e[10]!==i||e[11]!==r?(f=r?(0,H.jsx)(no,{type:`button`,onClick:i,children:`Выйти`}):(0,H.jsx)(ao,{to:`/login`,children:`Войти`}),e[10]=i,e[11]=r,e[12]=f):f=e[12];let p;return e[13]!==u||e[14]!==f?(p=(0,H.jsxs)(to,{children:[u,d,f]}),e[13]=u,e[14]=f,e[15]=p):p=e[15],p},lo=V.header`
+`,oo=()=>{let e=(0,Bn.c)(16),{theme:t,toggleTheme:n}=(0,C.useContext)(Ha),{username:r,logout:i}=(0,C.useContext)(Ba),a=t===`light`?`Переключить на тёмную тему`:`Переключить на светлую тему`,o=t===`light`?`Тема: Светлая`:`Тема: Тёмная`,s;e[0]===o?s=e[1]:(s=(0,H.jsx)(ro,{children:o}),e[0]=o,e[1]=s);let c=t===`light`?`☀`:`☾`,l;e[2]===c?l=e[3]:(l=(0,H.jsx)(io,{"aria-hidden":!0,children:c}),e[2]=c,e[3]=l);let u;e[4]!==s||e[5]!==l||e[6]!==a||e[7]!==n?(u=(0,H.jsxs)(no,{type:`button`,onClick:n,"aria-label":a,children:[s,l]}),e[4]=s,e[5]=l,e[6]=a,e[7]=n,e[8]=u):u=e[8];let d;e[9]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,H.jsx)(ao,{to:`/`,"aria-label":`Главная`,children:`Главная`}),e[9]=d):d=e[9];let f;e[10]!==i||e[11]!==r?(f=r?(0,H.jsx)(no,{type:`button`,onClick:i,children:`Выйти`}):(0,H.jsx)(ao,{to:`/login`,children:`Войти`}),e[10]=i,e[11]=r,e[12]=f):f=e[12];let p;return e[13]!==u||e[14]!==f?(p=(0,H.jsxs)(to,{children:[u,d,f]}),e[13]=u,e[14]=f,e[15]=p):p=e[15],p},so=V.header`
   position: sticky;
   top: 0;
   z-index: 50;
@@ -114,7 +103,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 rgb(15 23 42 / 4%);
-`,U=V.div`
+`,co=V.div`
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -129,7 +118,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 520px) {
     gap: 0.25rem;
   }
-`,W=V.span`
+`,lo=V.span`
   display: grid;
   place-items: center;
   width: 2rem;
@@ -140,12 +129,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   line-height: 1;
   box-shadow: 0 2px 8px rgb(99 102 241 / 35%);
   flex-shrink: 0;
-`,uo=V.div`
+`,U=V.div`
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
   min-width: 0;
-`,fo=V.span`
+`,W=V.span`
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: -0.03em;
@@ -155,7 +144,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   text-overflow: ellipsis;
   white-space: nowrap;
 
-`,po=V.span`
+`,uo=V.span`
   font-size: 0.75rem;
   font-weight: 500;
   color: var(--color-text-muted);
@@ -164,7 +153,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 720px) {
     display: none;
   }
-`,mo=V.span`
+`,fo=V.span`
   flex: 1;
   min-width: 0;
   text-align: center;
@@ -188,7 +177,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 520px) {
     padding: 0.1rem 0 0;
   }
-`,ho=V.nav`
+`,po=V.nav`
   display: flex;
   align-items: center;
   gap: 0.25rem;
@@ -202,7 +191,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 520px) {
     gap: 0.1rem;
   }
-`,go=V.div`
+`,mo=V.div`
   max-width: 1100px;
   margin: 0 auto;
   padding: 0.75rem 1rem;
@@ -220,16 +209,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     flex-wrap: wrap;
     row-gap: 0.25rem;
   }
-
-  @media (max-width: 640px) {
-    padding: 0.5rem;
-  }
-`;function _o(){let e=(0,Bn.c)(7),{username:t}=(0,C.useContext)(Ba),n;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,H.jsx)(W,{"aria-hidden":!0,children:`🌍`}),e[0]=n):n=e[0];let r;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,H.jsxs)(U,{children:[n,(0,H.jsxs)(uo,{children:[(0,H.jsx)(fo,{children:`Кантри.ру`}),(0,H.jsx)(po,{children:`Справочник стран`})]})]}),e[1]=r):r=e[1];let i=t??`аноним`,a;e[2]===i?a=e[3]:(a=(0,H.jsxs)(mo,{children:[`Привет, `,i,`!`]}),e[2]=i,e[3]=a);let o;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,H.jsx)(ho,{children:(0,H.jsx)(co,{})}),e[4]=o):o=e[4];let s;return e[5]===a?s=e[6]:(s=(0,H.jsx)(lo,{children:(0,H.jsxs)(go,{children:[r,a,o]})}),e[5]=a,e[6]=s),s}var vo=V.div`
+`;function ho(){let e=(0,Bn.c)(7),{username:t}=(0,C.useContext)(Ba),n;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,H.jsx)(lo,{"aria-hidden":!0,children:`🌍`}),e[0]=n):n=e[0];let r;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,H.jsxs)(co,{children:[n,(0,H.jsxs)(U,{children:[(0,H.jsx)(W,{children:`Кантри.ру`}),(0,H.jsx)(uo,{children:`Справочник стран`})]})]}),e[1]=r):r=e[1];let i=t??`аноним`,a;e[2]===i?a=e[3]:(a=(0,H.jsxs)(fo,{children:[`Привет, `,i,`!`]}),e[2]=i,e[3]=a);let o;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,H.jsx)(po,{children:(0,H.jsx)(oo,{})}),e[4]=o):o=e[4];let s;return e[5]===a?s=e[6]:(s=(0,H.jsx)(so,{children:(0,H.jsxs)(mo,{children:[r,a,o]})}),e[5]=a,e[6]=s),s}var go=V.div`
   min-height: 100%;
   display: flex;
   flex-direction: column;
   background: var(--color-bg);
-`,yo=V.div`
+`,_o=V.div`
   flex: 1;
   width: 100%;
   max-width: 1100px;
@@ -243,17 +228,13 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     padding: 1rem;
     gap: 0.5rem;
   }
-
-  @media (max-width: 640px) {
-    padding: 0.5rem;
-  }
-`,bo=()=>{let e=(0,Bn.c)(5),{theme:t}=(0,C.useContext)(Ha),n;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,H.jsx)(_o,{}),e[0]=n):n=e[0];let r,i;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,H.jsx)(yo,{children:(0,H.jsx)(Mt,{})}),i=(0,H.jsx)($a,{}),e[1]=r,e[2]=i):(r=e[1],i=e[2]);let a;return e[3]===t?a=e[4]:(a=(0,H.jsxs)(vo,{"data-theme":t,children:[n,r,i]}),e[3]=t,e[4]=a),a},xo={};function So(e){for(let t of e)xo[t.cca3]=t.name.common}function Co(e){return xo[e]}function wo(e){let t=new Set(e.map(e=>e.continents[0]));return Array.from(t).sort()}var To=20,Eo=20,Do=V.div`
+`,vo=()=>{let e=(0,Bn.c)(5),{theme:t}=(0,C.useContext)(Ha),n;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,H.jsx)(ho,{}),e[0]=n):n=e[0];let r,i;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,H.jsx)(_o,{children:(0,H.jsx)(Mt,{})}),i=(0,H.jsx)($a,{}),e[1]=r,e[2]=i):(r=e[1],i=e[2]);let a;return e[3]===t?a=e[4]:(a=(0,H.jsxs)(go,{"data-theme":t,children:[n,r,i]}),e[3]=t,e[4]=a),a},yo={};function bo(e){for(let t of e)yo[t.cca3]=t.name.common}function xo(e){return yo[e]}function So(e){let t=new Set(e.map(e=>e.continents[0]));return Array.from(t).sort()}var Co=20,wo=20,To=V.div`
   padding: 0.75rem;
   display: flex;
   height: 100%;
   flex-direction: column;
   transition: height 0.35s ease;
-  transform: translateY(${({$titleHeight:e})=>`${15-(e-1)*To}px`});
+  transform: translateY(${({$titleHeight:e})=>`${15-(e-1)*Co}px`});
   background: var(--color-surface);
   transition: transform 0.35s ease;
 
@@ -262,11 +243,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   }
 
   p {
-    transform: translateY(${({$nativeNamesHeight:e})=>`${Eo*e}px`});
+    transform: translateY(${({$nativeNamesHeight:e})=>`${wo*e}px`});
     transition: all 0.4s ease;
     color: var(--color-text-muted);
   }
-`,Oo=V.label`
+`,Eo=V.label`
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
@@ -286,25 +267,25 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     border-color: #6366f1;
     background: rgb(99 102 241 / 12%);
   }
-`,ko=V.input.attrs({type:`checkbox`})`
+`,Do=V.input.attrs({type:`checkbox`})`
   width: 1rem;
   height: 1rem;
   margin: 0;
   accent-color: #6366f1;
   cursor: pointer;
-`,Ao=V.div`
+`,Oo=V.div`
   position: relative;
   background: #f1f5f9;
   min-height: 100px;
   transition: transform 0.35s ease;
-`,jo=V.img`
+`,ko=V.img`
   position: absolute;
   inset: 0;
   width: 100%;
   object-fit: contain;
   display: block;
   transition: transform 0.35s ease;
-`,Mo=V.div`
+`,Ao=V.div`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -320,31 +301,31 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     opacity: 0.5;
   }
 
-  &.active ${Do} {
-    transform: translateY(${({$titleHeight:e,$nativeNamesHeight:t})=>`${To-e*To-17.5*(t-1)}px`});
+  &.active ${To} {
+    transform: translateY(${({$titleHeight:e,$nativeNamesHeight:t})=>`${Co-e*Co-17.5*(t-1)}px`});
 
     p {
       transform: translateY(0);
     }
   }
 
-  &.active ${jo} {
+  &.active ${ko} {
   }
 
-  &.active ${Ao} {
+  &.active ${Oo} {
     transform: translate(0%, -20%);
   }
-`,No=V.h3`
+`,jo=V.h3`
   margin: 0;
   font-size: 1rem;
   line-height: 1.25;
   font-weight: 600;
   color: #0f172a;
-`,Po=V.p`
+`,Mo=V.p`
   margin: 0;
   font-size: 0.72rem;
   color: #64748b;
-`;function Fo(e){let t=Object.values(e??{});return t.length===0?``:t.map(e=>e.common||e.official).filter(Boolean).join(` · `)}function Io(e){let t=(0,Bn.c)(35),{data:n,favoritesEnabled:r,isFavorite:i,onFavoriteToggle:a}=e,o=r===void 0?!1:r,s=i===void 0?!1:i,c;t[0]===n.name.nativeName?c=t[1]:(c=Fo(n.name.nativeName),t[0]=n.name.nativeName,t[1]=c);let l=c,[u,d]=(0,C.useState)(!1),f=(0,C.useRef)(null),[p,m]=(0,C.useState)(0),h=(0,C.useRef)(null),[g,_]=(0,C.useState)(0),v=it(),y,b;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(y=()=>{let e=f.current;if(!e)return;m(Math.round(e.getBoundingClientRect().height/20.25));let t=h.current;t&&_(Math.round(t.getBoundingClientRect().height/17))},b=[],t[2]=y,t[3]=b):(y=t[2],b=t[3]),(0,C.useEffect)(y,b);let x;t[4]===v?x=t[5]:(x=function(e){v(`/country/${e.name.common}`)},t[4]=v,t[5]=x);let S=x,w=u?`active`:void 0,T,ee;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(T=()=>d(!0),ee=()=>d(!1),t[6]=T,t[7]=ee):(T=t[6],ee=t[7]);let E;t[8]!==n||t[9]!==S?(E=()=>S(n),t[8]=n,t[9]=S,t[10]=E):E=t[10];let D;t[11]!==n.flag.alt||t[12]!==n.flag.png?(D=(0,H.jsx)(Ao,{children:(0,H.jsx)(jo,{src:n.flag.png,alt:n.flag.alt,loading:`lazy`})}),t[11]=n.flag.alt,t[12]=n.flag.png,t[13]=D):D=t[13];let O;t[14]!==o||t[15]!==s||t[16]!==a?(O=o&&a?(0,H.jsx)(Oo,{onClick:zo,onPointerDown:Ro,children:(0,H.jsx)(ko,{checked:s,onChange:e=>{e.stopPropagation(),a()},onClick:Lo,"aria-label":s?`Убрать из избранного`:`Добавить в избранное`})}):null,t[14]=o,t[15]=s,t[16]=a,t[17]=O):O=t[17];let k;t[18]===n.name.common?k=t[19]:(k=(0,H.jsx)(No,{ref:f,children:n.name.common}),t[18]=n.name.common,t[19]=k);let A;t[20]===l?A=t[21]:(A=l?(0,H.jsx)(Po,{ref:h,children:l}):null,t[20]=l,t[21]=A);let j;t[22]!==g||t[23]!==k||t[24]!==A||t[25]!==p?(j=(0,H.jsxs)(Do,{$titleHeight:p,$nativeNamesHeight:g,children:[k,A]}),t[22]=g,t[23]=k,t[24]=A,t[25]=p,t[26]=j):j=t[26];let M;return t[27]!==g||t[28]!==E||t[29]!==D||t[30]!==O||t[31]!==j||t[32]!==w||t[33]!==p?(M=(0,H.jsxs)(Mo,{className:w,onMouseEnter:T,onMouseLeave:ee,onClick:E,$titleHeight:p,$nativeNamesHeight:g,children:[D,O,j]}),t[27]=g,t[28]=E,t[29]=D,t[30]=O,t[31]=j,t[32]=w,t[33]=p,t[34]=M):M=t[34],M}function Lo(e){return e.stopPropagation()}function Ro(e){return e.stopPropagation()}function zo(e){return e.stopPropagation()}var Bo=V.form`
+`;function No(e){let t=Object.values(e??{});return t.length===0?``:t.map(e=>e.common||e.official).filter(Boolean).join(` · `)}function Po(e){let t=(0,Bn.c)(35),{data:n,favoritesEnabled:r,isFavorite:i,onFavoriteToggle:a}=e,o=r===void 0?!1:r,s=i===void 0?!1:i,c;t[0]===n.name.nativeName?c=t[1]:(c=No(n.name.nativeName),t[0]=n.name.nativeName,t[1]=c);let l=c,[u,d]=(0,C.useState)(!1),f=(0,C.useRef)(null),[p,m]=(0,C.useState)(0),h=(0,C.useRef)(null),[g,_]=(0,C.useState)(0),v=it(),y,b;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(y=()=>{let e=f.current;if(!e)return;m(Math.round(e.getBoundingClientRect().height/20.25));let t=h.current;t&&_(Math.round(t.getBoundingClientRect().height/17))},b=[],t[2]=y,t[3]=b):(y=t[2],b=t[3]),(0,C.useEffect)(y,b);let x;t[4]===v?x=t[5]:(x=function(e){v(`/country/${e.name.common}`)},t[4]=v,t[5]=x);let S=x,w=u?`active`:void 0,T,ee;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(T=()=>d(!0),ee=()=>d(!1),t[6]=T,t[7]=ee):(T=t[6],ee=t[7]);let E;t[8]!==n||t[9]!==S?(E=()=>S(n),t[8]=n,t[9]=S,t[10]=E):E=t[10];let D;t[11]!==n.flag.alt||t[12]!==n.flag.png?(D=(0,H.jsx)(Oo,{children:(0,H.jsx)(ko,{src:n.flag.png,alt:n.flag.alt,loading:`lazy`})}),t[11]=n.flag.alt,t[12]=n.flag.png,t[13]=D):D=t[13];let O;t[14]!==o||t[15]!==s||t[16]!==a?(O=o&&a?(0,H.jsx)(Eo,{onClick:Lo,onPointerDown:Io,children:(0,H.jsx)(Do,{checked:s,onChange:e=>{e.stopPropagation(),a()},onClick:Fo,"aria-label":s?`Убрать из избранного`:`Добавить в избранное`})}):null,t[14]=o,t[15]=s,t[16]=a,t[17]=O):O=t[17];let k;t[18]===n.name.common?k=t[19]:(k=(0,H.jsx)(jo,{ref:f,children:n.name.common}),t[18]=n.name.common,t[19]=k);let A;t[20]===l?A=t[21]:(A=l?(0,H.jsx)(Mo,{ref:h,children:l}):null,t[20]=l,t[21]=A);let j;t[22]!==g||t[23]!==k||t[24]!==A||t[25]!==p?(j=(0,H.jsxs)(To,{$titleHeight:p,$nativeNamesHeight:g,children:[k,A]}),t[22]=g,t[23]=k,t[24]=A,t[25]=p,t[26]=j):j=t[26];let M;return t[27]!==g||t[28]!==E||t[29]!==D||t[30]!==O||t[31]!==j||t[32]!==w||t[33]!==p?(M=(0,H.jsxs)(Ao,{className:w,onMouseEnter:T,onMouseLeave:ee,onClick:E,$titleHeight:p,$nativeNamesHeight:g,children:[D,O,j]}),t[27]=g,t[28]=E,t[29]=D,t[30]=O,t[31]=j,t[32]=w,t[33]=p,t[34]=M):M=t[34],M}function Fo(e){return e.stopPropagation()}function Io(e){return e.stopPropagation()}function Lo(e){return e.stopPropagation()}var Ro=V.form`
   margin: 0;
   width: 100%;
   max-width: 320px;
@@ -352,9 +333,9 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 1100px) {
     max-width: 100%;
   }
-`,Vo=V.input`
+`,zo=V.input`
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.5rem 0.75rem;
   font-size: 1rem;
   border: 1px solid var(--color-border);
   border-radius: 8px;
@@ -377,11 +358,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 1100px) {
     min-width: 0;
   }
-
-  @media (max-width: 520px) {
-    padding: 0.5rem 0.25rem;
-  }
-`;function Ho(e){let t=(0,Bn.c)(5),{value:n,onChange:r}=e,i;t[0]===r?i=t[1]:(i=e=>r(e.target.value),t[0]=r,t[1]=i);let a;return t[2]!==i||t[3]!==n?(a=(0,H.jsx)(Bo,{role:`search`,onSubmit:Uo,children:(0,H.jsx)(Vo,{id:`country-search`,type:`search`,autoComplete:`off`,placeholder:`Поиск по названию`,value:n,onChange:i})}),t[2]=i,t[3]=n,t[4]=a):a=t[4],a}function Uo(e){e.preventDefault()}async function Wo(){let e=await fetch(`https://restcountries.com/v4/all?fields=name,cca3,currencies,capital,continents,languages,borders,flag,population,religion`);if(!e.ok)throw Error(`HTTP ${e.status}`);let t=await e.json();if(!Array.isArray(t))throw Error(`Expected an array from API`);return t}async function Go(e){console.log(e);let t=await fetch(`https://restcountries.com/v4/name/${e}`);if(!t.ok)throw Error(`HTTP ${t.status}`);let n=await t.json();if(console.log(n),!Array.isArray(n))throw Error(`Expected an array from API`);return n[0]}var Ko=V.div`
+`;function Bo(e){let t=(0,Bn.c)(5),{value:n,onChange:r}=e,i;t[0]===r?i=t[1]:(i=e=>r(e.target.value),t[0]=r,t[1]=i);let a;return t[2]!==i||t[3]!==n?(a=(0,H.jsx)(Ro,{role:`search`,onSubmit:Vo,children:(0,H.jsx)(zo,{id:`country-search`,type:`search`,autoComplete:`off`,placeholder:`Поиск по названию`,value:n,onChange:i})}),t[2]=i,t[3]=n,t[4]=a):a=t[4],a}function Vo(e){e.preventDefault()}async function Ho(){let e=await fetch(`https://restcountries.com/v4/all?fields=name,cca3,currencies,capital,continents,languages,borders,flag,population,religion`);if(!e.ok)throw Error(`HTTP ${e.status}`);let t=await e.json();if(!Array.isArray(t))throw Error(`Expected an array from API`);return t}async function Uo(e){console.log(e);let t=await fetch(`https://restcountries.com/v4/name/${e}`);if(!t.ok)throw Error(`HTTP ${t.status}`);let n=await t.json();if(console.log(n),!Array.isArray(n))throw Error(`Expected an array from API`);return n[0]}var Wo=V.div`
   display: flex;
   justify-content: flex-start;
   min-width: 0;
@@ -396,7 +373,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     width: 100%;
     max-width: 100%;
   }
-`,qo=V.main`
+`,Go=V.main`
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
@@ -416,7 +393,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     grid-template-columns: minmax(0, 1fr);
     gap: 0.5rem;
   }
-`,Jo=V.div`
+`,Ko=V.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -428,7 +405,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 520px) {
     gap: 0.5rem;
   }
-`,Yo=V.div`
+`,qo=V.div`
   display: contents;
 
   @media (max-width: 720px) {
@@ -443,7 +420,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 520px) {
     gap: 0.5rem;
   }
-`,Xo=V.div`
+`,Jo=V.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -468,7 +445,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 520px) {
     gap: 0.5rem;
   }
-`,Zo=V.button`
+`,Yo=V.button`
   padding: 0.5rem 1rem;
   border: 1px solid var(--color-border);
   border-radius: 8px;
@@ -491,11 +468,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     min-width: 0;
     padding: 0.5rem;
   }
-
-  @media (max-width: 520px) {
-    padding: 0.25rem 0.5rem;
-  }
-`,Qo=V.select`
+`,Xo=V.select`
   padding: 0.5rem;
   border: 1px solid var(--color-border);
   border-radius: 8px;
@@ -508,7 +481,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     max-width: 100%;
     min-width: 0;
   }
-`,$o=V.label`
+`,Zo=V.label`
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -523,12 +496,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     max-width: 100%;
     gap: 0.5rem;
   }
-`,es=V.input`
+`,Qo=V.input`
   width: 1rem;
   height: 1rem;
   accent-color: #6366f1;
   cursor: pointer;
-`,ts=V.div`
+`,$o=V.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -538,12 +511,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     flex-wrap: wrap;
     gap: 1rem;
 
-    & > ${Ko} {
+    & > ${Wo} {
       flex: 1 1 auto;
       min-width: 0;
     }
 
-    & > ${Xo} {
+    & > ${Jo} {
       flex: 1 1 auto;
     }
   }
@@ -555,8 +528,8 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     justify-content: flex-start;
     gap: 0.5rem;
 
-    & > ${Ko},
-    & > ${Xo} {
+    & > ${Wo},
+    & > ${Jo} {
       flex: none;
       width: 100%;
       max-width: 100%;
@@ -566,7 +539,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 520px) {
     gap: 0.5rem;
   }
-`,ns=V.div`
+`,es=V.div`
   grid-column: 1 / -1;
   padding: 1rem;
   text-align: center;
@@ -577,20 +550,12 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 1100px) {
     padding: 0.5rem;
   }
-
-  @media (max-width: 640px) {
-    padding: 0.5rem;
-  }
-
-  @media (max-width: 520px) {
-    padding: 0.25rem;
-  }
-`,rs=()=>{let e=(0,Bn.c)(52),{favoritesEnabled:t,favoriteIds:n,toggleFavorite:r}=(0,C.useContext)(Va),i;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(i=[],e[0]=i):i=e[0];let[a,o]=(0,C.useState)(i),[s,c]=(0,C.useState)(``),[l,u]=(0,C.useState)(`asc`),d;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(d=[],e[1]=d):d=e[1];let[f,p]=(0,C.useState)(d),[m,h]=(0,C.useState)(``),[g,_]=(0,C.useState)(!1),v,y;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(v=()=>{Wo().then(e=>{o(e),So(e),p(wo(e))}).catch(console.error)},y=[],e[2]=v,e[3]=y):(v=e[2],y=e[3]),(0,C.useEffect)(v,y);let b,x;e[4]===t?(b=e[5],x=e[6]):(b=()=>{t||_(!1)},x=[t],e[4]=t,e[5]=b,e[6]=x),(0,C.useEffect)(b,x);let S;e[7]===n?S=e[8]:(S=new Set(n),e[7]=n,e[8]=S);let w=S,T;if(e[9]!==a||e[10]!==w||e[11]!==t||e[12]!==g||e[13]!==s||e[14]!==m){let n=s.trim().toLowerCase();T=[...a].filter(e=>{let r=e.name.official.toLowerCase().includes(n)||e.name.nativeName&&Object.values(e.name.nativeName).some(e=>e.official.toLowerCase().includes(n)),i=m===``||e.continents.includes(m),a=!g||!t||w.has(e.cca3);return i&&r&&a}),e[9]=a,e[10]=w,e[11]=t,e[12]=g,e[13]=s,e[14]=m,e[15]=T}else T=e[15];let ee=T,E;if(e[16]!==ee||e[17]!==l){let t;e[19]===l?t=e[20]:(t=(e,t)=>l===`asc`?e.name.common.localeCompare(t.name.common):t.name.common.localeCompare(e.name.common),e[19]=l,e[20]=t),E=[...ee].sort(t),e[16]=ee,e[17]=l,e[18]=E}else E=e[18];let D=E,O;e[21]===s?O=e[22]:(O=(0,H.jsx)(Ko,{children:(0,H.jsx)(Ho,{value:s,onChange:c})}),e[21]=s,e[22]=O);let k,A;e[23]===Symbol.for(`react.memo_cache_sentinel`)?(k=e=>h(e.target.value),A=(0,H.jsx)(`option`,{value:``,children:`Все континенты`}),e[23]=k,e[24]=A):(k=e[23],A=e[24]);let j;e[25]===f?j=e[26]:(j=f.map(is),e[25]=f,e[26]=j);let M;e[27]!==m||e[28]!==j?(M=(0,H.jsxs)(Qo,{id:`home-continent-filter`,name:`continent`,"aria-label":`Фильтр по континенту`,value:m,onChange:k,children:[A,j]}),e[27]=m,e[28]=j,e[29]=M):M=e[29];let te;e[30]!==t||e[31]!==g?(te=t?(0,H.jsxs)($o,{children:[(0,H.jsx)(es,{type:`checkbox`,checked:g,onChange:e=>_(e.target.checked)}),`Только избранное`]}):null,e[30]=t,e[31]=g,e[32]=te):te=e[32];let ne;e[33]===Symbol.for(`react.memo_cache_sentinel`)?(ne=(0,H.jsx)(Zo,{onClick:()=>u(`asc`),children:`По возрастанию`}),e[33]=ne):ne=e[33];let N;e[34]===Symbol.for(`react.memo_cache_sentinel`)?(N=(0,H.jsxs)(Yo,{children:[ne,(0,H.jsx)(Zo,{onClick:()=>u(`desc`),children:`По убыванию`})]}),e[34]=N):N=e[34];let P;e[35]!==M||e[36]!==te?(P=(0,H.jsxs)(Xo,{children:[M,te,N]}),e[35]=M,e[36]=te,e[37]=P):P=e[37];let re;e[38]!==P||e[39]!==O?(re=(0,H.jsxs)(ts,{children:[O,P]}),e[38]=P,e[39]=O,e[40]=re):re=e[40];let ie;e[41]!==w||e[42]!==t||e[43]!==g||e[44]!==D||e[45]!==r?(ie=D.length>0?D.map(e=>(0,H.jsx)(Io,{data:e,favoritesEnabled:t,isFavorite:w.has(e.cca3),onFavoriteToggle:()=>r(e.cca3)},e.cca3)):(0,H.jsx)(ns,{children:g&&t?`Нет избранных стран по текущим фильтрам`:`Страны не найдены`}),e[41]=w,e[42]=t,e[43]=g,e[44]=D,e[45]=r,e[46]=ie):ie=e[46];let ae;e[47]===ie?ae=e[48]:(ae=(0,H.jsx)(qo,{children:ie}),e[47]=ie,e[48]=ae);let oe;return e[49]!==re||e[50]!==ae?(oe=(0,H.jsxs)(Jo,{children:[re,ae]}),e[49]=re,e[50]=ae,e[51]=oe):oe=e[51],oe};function is(e){return(0,H.jsx)(`option`,{value:e,children:e},e)}var as=V.main`
+`,ts=()=>{let e=(0,Bn.c)(52),{favoritesEnabled:t,favoriteIds:n,toggleFavorite:r}=(0,C.useContext)(Va),i;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(i=[],e[0]=i):i=e[0];let[a,o]=(0,C.useState)(i),[s,c]=(0,C.useState)(``),[l,u]=(0,C.useState)(`asc`),d;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(d=[],e[1]=d):d=e[1];let[f,p]=(0,C.useState)(d),[m,h]=(0,C.useState)(``),[g,_]=(0,C.useState)(!1),v,y;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(v=()=>{Ho().then(e=>{o(e),bo(e),p(So(e))}).catch(console.error)},y=[],e[2]=v,e[3]=y):(v=e[2],y=e[3]),(0,C.useEffect)(v,y);let b,x;e[4]===t?(b=e[5],x=e[6]):(b=()=>{t||_(!1)},x=[t],e[4]=t,e[5]=b,e[6]=x),(0,C.useEffect)(b,x);let S;e[7]===n?S=e[8]:(S=new Set(n),e[7]=n,e[8]=S);let w=S,T;if(e[9]!==a||e[10]!==w||e[11]!==t||e[12]!==g||e[13]!==s||e[14]!==m){let n=s.trim().toLowerCase();T=[...a].filter(e=>{let r=e.name.official.toLowerCase().includes(n)||e.name.nativeName&&Object.values(e.name.nativeName).some(e=>e.official.toLowerCase().includes(n)),i=m===``||e.continents.includes(m),a=!g||!t||w.has(e.cca3);return i&&r&&a}),e[9]=a,e[10]=w,e[11]=t,e[12]=g,e[13]=s,e[14]=m,e[15]=T}else T=e[15];let ee=T,E;if(e[16]!==ee||e[17]!==l){let t;e[19]===l?t=e[20]:(t=(e,t)=>l===`asc`?e.name.common.localeCompare(t.name.common):t.name.common.localeCompare(e.name.common),e[19]=l,e[20]=t),E=[...ee].sort(t),e[16]=ee,e[17]=l,e[18]=E}else E=e[18];let D=E,O;e[21]===s?O=e[22]:(O=(0,H.jsx)(Wo,{children:(0,H.jsx)(Bo,{value:s,onChange:c})}),e[21]=s,e[22]=O);let k,A;e[23]===Symbol.for(`react.memo_cache_sentinel`)?(k=e=>h(e.target.value),A=(0,H.jsx)(`option`,{value:``,children:`Все континенты`}),e[23]=k,e[24]=A):(k=e[23],A=e[24]);let j;e[25]===f?j=e[26]:(j=f.map(ns),e[25]=f,e[26]=j);let M;e[27]!==m||e[28]!==j?(M=(0,H.jsxs)(Xo,{id:`home-continent-filter`,name:`continent`,"aria-label":`Фильтр по континенту`,value:m,onChange:k,children:[A,j]}),e[27]=m,e[28]=j,e[29]=M):M=e[29];let te;e[30]!==t||e[31]!==g?(te=t?(0,H.jsxs)(Zo,{children:[(0,H.jsx)(Qo,{type:`checkbox`,checked:g,onChange:e=>_(e.target.checked)}),`Только избранное`]}):null,e[30]=t,e[31]=g,e[32]=te):te=e[32];let ne;e[33]===Symbol.for(`react.memo_cache_sentinel`)?(ne=(0,H.jsx)(Yo,{onClick:()=>u(`asc`),children:`По возрастанию`}),e[33]=ne):ne=e[33];let N;e[34]===Symbol.for(`react.memo_cache_sentinel`)?(N=(0,H.jsxs)(qo,{children:[ne,(0,H.jsx)(Yo,{onClick:()=>u(`desc`),children:`По убыванию`})]}),e[34]=N):N=e[34];let P;e[35]!==M||e[36]!==te?(P=(0,H.jsxs)(Jo,{children:[M,te,N]}),e[35]=M,e[36]=te,e[37]=P):P=e[37];let re;e[38]!==P||e[39]!==O?(re=(0,H.jsxs)($o,{children:[O,P]}),e[38]=P,e[39]=O,e[40]=re):re=e[40];let ie;e[41]!==w||e[42]!==t||e[43]!==g||e[44]!==D||e[45]!==r?(ie=D.length>0?D.map(e=>(0,H.jsx)(Po,{data:e,favoritesEnabled:t,isFavorite:w.has(e.cca3),onFavoriteToggle:()=>r(e.cca3)},e.cca3)):(0,H.jsx)(es,{children:g&&t?`Нет избранных стран по текущим фильтрам`:`Страны не найдены`}),e[41]=w,e[42]=t,e[43]=g,e[44]=D,e[45]=r,e[46]=ie):ie=e[46];let ae;e[47]===ie?ae=e[48]:(ae=(0,H.jsx)(Go,{children:ie}),e[47]=ie,e[48]=ae);let oe;return e[49]!==re||e[50]!==ae?(oe=(0,H.jsxs)(Ko,{children:[re,ae]}),e[49]=re,e[50]=ae,e[51]=oe):oe=e[51],oe};function ns(e){return(0,H.jsx)(`option`,{value:e,children:e},e)}var rs=V.main`
   min-height: 100%;
   display: grid;
   place-items: center;
   padding: 1rem;
-`,os=V.form`
+`,is=V.form`
   width: 100%;
   max-width: 380px;
   padding: 1rem;
@@ -598,16 +563,16 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   border-radius: 12px;
   background: var(--color-surface);
   box-shadow: 0 1px 3px rgb(15 23 42 / 8%);
-`,ss=V.h1`
+`,as=V.h1`
   margin: 0 0 1rem;
   font-size: 1.2rem;
   color: var(--color-text);
-`,cs=V.label`
+`,os=V.label`
   display: block;
   margin-bottom: 0.5rem;
   font-size: 0.75rem;
   color: var(--color-text-muted);
-`,ls=V.input`
+`,ss=V.input`
   width: 100%;
   margin-top: 0.25rem;
   padding: 0.75rem;
@@ -621,11 +586,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     outline: 2px solid var(--color-outline);
     border-color: var(--color-outline);
   }
-`,us=V.p`
+`,cs=V.p`
   margin: 0.5rem 0 0;
   font-size: 0.75rem;
   color: #dc2626;
-`,ds=V.button`
+`,ls=V.button`
   width: 100%;
   margin-top: 0.25rem;
   padding: 0.75rem;
@@ -639,17 +604,17 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   &:hover {
     opacity: 0.92;
   }
-`,fs=V.p`
+`,us=V.p`
   margin: 1rem 0 0;
   font-size: 0.75rem;
   line-height: 1.45;
   color: var(--color-text-muted);
-`;function ps(e){return e.length<4?`Пароль: не меньше 4 символов.`:/[a-zA-Z]/.test(e)?/[0-9]/.test(e)?null:`Пароль: нужна хотя бы одна цифра.`:`Пароль: нужна хотя бы одна латинская буква (a–z).`}function ms(e){let t=e.trim().split(`@`)[0];return t.length>0?t:e.trim()||`гость`}var hs=()=>{let e=(0,Bn.c)(24),t=it(),{login:n}=(0,C.useContext)(Ba),[r,i]=(0,C.useState)(``),[a,o]=(0,C.useState)(``),[s,c]=(0,C.useState)(null),l;e[0]!==r||e[1]!==n||e[2]!==t||e[3]!==a?(l=e=>{e.preventDefault();let i=ps(a);c(i),!i&&(n(ms(r)),t(`/`))},e[0]=r,e[1]=n,e[2]=t,e[3]=a,e[4]=l):l=e[4];let u=l,d;e[5]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,H.jsx)(ss,{children:`Авторизация`}),e[5]=d):d=e[5];let f;e[6]===Symbol.for(`react.memo_cache_sentinel`)?(f=e=>i(e.target.value),e[6]=f):f=e[6];let p;e[7]===r?p=e[8]:(p=(0,H.jsxs)(cs,{children:[`Email`,(0,H.jsx)(ls,{type:`email`,autoComplete:`email`,value:r,onChange:f,required:!0})]}),e[7]=r,e[8]=p);let m=!!s,h;e[9]===Symbol.for(`react.memo_cache_sentinel`)?(h=e=>{o(e.target.value),c(null)},e[9]=h):h=e[9];let g;e[10]!==a||e[11]!==m?(g=(0,H.jsx)(ls,{type:`password`,autoComplete:`current-password`,value:a,$invalid:m,onChange:h,required:!0}),e[10]=a,e[11]=m,e[12]=g):g=e[12];let _;e[13]===s?_=e[14]:(_=s?(0,H.jsx)(us,{children:s}):null,e[13]=s,e[14]=_);let v;e[15]!==g||e[16]!==_?(v=(0,H.jsxs)(cs,{children:[`Пароль`,g,_]}),e[15]=g,e[16]=_,e[17]=v):v=e[17];let y,b;e[18]===Symbol.for(`react.memo_cache_sentinel`)?(b=(0,H.jsx)(ds,{type:`submit`,children:`Войти`}),y=(0,H.jsx)(fs,{children:`Пароль должен быть не короче 4 символов и содержать хотя бы одну цифру и одну латинскую букву. Серверной авторизации нет, поэтому можно ввести любые данные с учётом валидации.`}),e[18]=y,e[19]=b):(y=e[18],b=e[19]);let x;return e[20]!==u||e[21]!==p||e[22]!==v?(x=(0,H.jsx)(as,{children:(0,H.jsxs)(os,{onSubmit:u,noValidate:!0,children:[d,p,v,b,y]})}),e[20]=u,e[21]=p,e[22]=v,e[23]=x):x=e[23],x},gs=V.div`
+`;function ds(e){return e.length<4?`Пароль: не меньше 4 символов.`:/[a-zA-Z]/.test(e)?/[0-9]/.test(e)?null:`Пароль: нужна хотя бы одна цифра.`:`Пароль: нужна хотя бы одна латинская буква (a–z).`}function fs(e){let t=e.trim().split(`@`)[0];return t.length>0?t:e.trim()||`гость`}var ps=()=>{let e=(0,Bn.c)(24),t=it(),{login:n}=(0,C.useContext)(Ba),[r,i]=(0,C.useState)(``),[a,o]=(0,C.useState)(``),[s,c]=(0,C.useState)(null),l;e[0]!==r||e[1]!==n||e[2]!==t||e[3]!==a?(l=e=>{e.preventDefault();let i=ds(a);c(i),!i&&(n(fs(r)),t(`/`))},e[0]=r,e[1]=n,e[2]=t,e[3]=a,e[4]=l):l=e[4];let u=l,d;e[5]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,H.jsx)(as,{children:`Авторизация`}),e[5]=d):d=e[5];let f;e[6]===Symbol.for(`react.memo_cache_sentinel`)?(f=e=>i(e.target.value),e[6]=f):f=e[6];let p;e[7]===r?p=e[8]:(p=(0,H.jsxs)(os,{children:[`Email`,(0,H.jsx)(ss,{type:`email`,autoComplete:`email`,value:r,onChange:f,required:!0})]}),e[7]=r,e[8]=p);let m=!!s,h;e[9]===Symbol.for(`react.memo_cache_sentinel`)?(h=e=>{o(e.target.value),c(null)},e[9]=h):h=e[9];let g;e[10]!==a||e[11]!==m?(g=(0,H.jsx)(ss,{type:`password`,autoComplete:`current-password`,value:a,$invalid:m,onChange:h,required:!0}),e[10]=a,e[11]=m,e[12]=g):g=e[12];let _;e[13]===s?_=e[14]:(_=s?(0,H.jsx)(cs,{children:s}):null,e[13]=s,e[14]=_);let v;e[15]!==g||e[16]!==_?(v=(0,H.jsxs)(os,{children:[`Пароль`,g,_]}),e[15]=g,e[16]=_,e[17]=v):v=e[17];let y,b;e[18]===Symbol.for(`react.memo_cache_sentinel`)?(b=(0,H.jsx)(ls,{type:`submit`,children:`Войти`}),y=(0,H.jsx)(us,{children:`Пароль должен быть не короче 4 символов и содержать хотя бы одну цифру и одну латинскую букву. Серверной авторизации нет, поэтому можно ввести любые данные с учётом валидации.`}),e[18]=y,e[19]=b):(y=e[18],b=e[19]);let x;return e[20]!==u||e[21]!==p||e[22]!==v?(x=(0,H.jsx)(rs,{children:(0,H.jsxs)(is,{onSubmit:u,noValidate:!0,children:[d,p,v,b,y]})}),e[20]=u,e[21]=p,e[22]=v,e[23]=x):x=e[23],x},ms=V.div`
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
   padding: 1rem 5rem;
-`,_s=V.section`
+`,hs=V.section`
   display: grid;
   gap: 1rem;
   grid-template-columns: minmax(160px, 220px) 1fr;
@@ -659,7 +624,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 560px) {
     grid-template-columns: 1fr;
   }
-`,vs=V.div`
+`,gs=V.div`
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--color-border);
@@ -668,25 +633,25 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   align-items: center;
   justify-content: center;
   box-shadow: 0 1px 3px rgb(15 23 42 / 6%);
-`,ys=V.img`
+`,_s=V.img`
   width: 100%;
   height: 100%;
   object-fit: contain;
-`,bs=V.div`
+`,vs=V.div`
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   min-width: 0;
-`,xs=V.h1`
+`,ys=V.h1`
   margin: 0;
   font-size: 2rem;
   color: var(--color-text);
-`,Ss=V.p`
+`,bs=V.p`
   margin: 0;
   font-size: 1rem;
   color: var(--color-text-muted);
   line-height: 1.0;
-`,Cs=V.span`
+`,xs=V.span`
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.25rem 0.5rem;
@@ -696,7 +661,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   background: var(--color-hover-bg);
   border-radius: 6px;
   width: fit-content;
-`,ws=V.button`
+`,Ss=V.button`
   margin-bottom: 1rem;
   padding: 0.75rem;
   border: 1px solid var(--color-border);
@@ -716,7 +681,7 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     border-color: var(--color-border);
     color: var(--color-text);
   }
-`,Ts=V.div`
+`,Cs=V.div`
   display: grid;
   gap: 0.75rem;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -724,32 +689,32 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
   @media (max-width: 640px) {
     grid-template-columns: 1fr;
   }
-`,Es=V.div`
+`,ws=V.div`
   padding: 1rem;
   border-radius: 10px;
   border: 1px solid var(--color-border);
   background: var(--color-surface);
   box-shadow: 0 1px 2px rgb(15 23 42 / 5%);
-`,Ds=V.div`
+`,Ts=V.div`
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--color-text-muted);
   margin-bottom: 0.4rem;
-`,Os=V.div`
+`,Es=V.div`
   font-size: 1rem;
   color: var(--color-text);
   line-height: 1.5;
-`,ks=V.p`
+`,Ds=V.p`
   margin: 0;
   font-size: 1rem;
   color: var(--color-text-muted);
-`,As=V.div`
+`,Os=V.div`
   min-height: 220px;
   display: grid;
   place-items: center;
   gap: 0.75rem;
-`,js=V.span`
+`,ks=V.span`
   width: 44px;
   height: 44px;
   border-radius: 999px;
@@ -762,11 +727,11 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
       transform: rotate(360deg);
     }
   }
-`,Ms=V.p`
+`,As=V.p`
   margin: 0;
   font-size: 1rem;
   color: #64748b;
-`;function Ns(e,t){return e?.length?e.join(`, `):t}function Ps(e){return e?.length?e.map(e=>Co(e)??e).join(`, `):`-`}var Fs=()=>{let e=(0,Bn.c)(66),{name:t}=ct(),n=it(),[r,i]=(0,C.useState)(),a,o;if(e[0]===t?(a=e[1],o=e[2]):(a=()=>{t&&Go(t).then(e=>i(e)).catch(console.error)},o=[t],e[0]=t,e[1]=a,e[2]=o),(0,C.useEffect)(a,o),!t){let t;return e[3]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,H.jsx)(gs,{children:(0,H.jsx)(Ms,{children:`Не указана страна в адресе.`})}),e[3]=t):t=e[3],t}if(!r){let t;return e[4]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,H.jsx)(gs,{children:(0,H.jsxs)(As,{"aria-live":`polite`,"aria-busy":`true`,children:[(0,H.jsx)(js,{"aria-hidden":!0}),(0,H.jsx)(ks,{children:`Загрузка…`})]})}),e[4]=t):t=e[4],t}let s;e[5]===r.name.nativeName?s=e[6]:(s=r.name.nativeName?Object.values(r.name.nativeName).map(Is).join(`, `):`-`,e[5]=r.name.nativeName,e[6]=s);let c=s,l;e[7]===r.languages?l=e[8]:(l=r.languages?.map(Ls).join(`, `)||`-`,e[7]=r.languages,e[8]=l);let u=l,d;e[9]===r.religion?d=e[10]:(d=r.religion?.map(Rs).join(`, `)||`-`,e[9]=r.religion,e[10]=d);let f=d,p;e[11]!==r.flag.alt||e[12]!==r.flag.png?(p=(0,H.jsx)(vs,{children:(0,H.jsx)(ys,{src:r.flag.png,alt:r.flag.alt,loading:`lazy`})}),e[11]=r.flag.alt,e[12]=r.flag.png,e[13]=p):p=e[13];let m;e[14]===r.name.common?m=e[15]:(m=(0,H.jsx)(xs,{children:r.name.common}),e[14]=r.name.common,e[15]=m);let h;e[16]===c?h=e[17]:(h=(0,H.jsx)(Ss,{children:c}),e[16]=c,e[17]=h);let g;e[18]===r.cca3?g=e[19]:(g=(0,H.jsx)(Cs,{children:r.cca3}),e[18]=r.cca3,e[19]=g);let _;e[20]!==m||e[21]!==h||e[22]!==g?(_=(0,H.jsxs)(bs,{children:[m,h,g]}),e[20]=m,e[21]=h,e[22]=g,e[23]=_):_=e[23];let v;e[24]!==p||e[25]!==_?(v=(0,H.jsxs)(_s,{children:[p,_]}),e[24]=p,e[25]=_,e[26]=v):v=e[26];let y;e[27]===n?y=e[28]:(y=(0,H.jsx)(ws,{type:`button`,onClick:()=>n(-1),children:`Назад`}),e[27]=n,e[28]=y);let b;e[29]===Symbol.for(`react.memo_cache_sentinel`)?(b=(0,H.jsx)(Ds,{children:`Столица`}),e[29]=b):b=e[29];let x;e[30]===r.capital?x=e[31]:(x=Ns(r.capital,`-`),e[30]=r.capital,e[31]=x);let S;e[32]===x?S=e[33]:(S=(0,H.jsxs)(Es,{children:[b,(0,H.jsx)(Os,{children:x})]}),e[32]=x,e[33]=S);let w;e[34]===Symbol.for(`react.memo_cache_sentinel`)?(w=(0,H.jsx)(Ds,{children:`Континент`}),e[34]=w):w=e[34];let T;e[35]===r.continents?T=e[36]:(T=Ns(r.continents,`-`),e[35]=r.continents,e[36]=T);let ee;e[37]===T?ee=e[38]:(ee=(0,H.jsxs)(Es,{children:[w,(0,H.jsx)(Os,{children:T})]}),e[37]=T,e[38]=ee);let E;e[39]===Symbol.for(`react.memo_cache_sentinel`)?(E=(0,H.jsx)(Ds,{children:`Языки`}),e[39]=E):E=e[39];let D;e[40]===u?D=e[41]:(D=(0,H.jsxs)(Es,{children:[E,(0,H.jsx)(Os,{children:u})]}),e[40]=u,e[41]=D);let O;e[42]===Symbol.for(`react.memo_cache_sentinel`)?(O=(0,H.jsx)(Ds,{children:`Границы`}),e[42]=O):O=e[42];let k;e[43]===r.borders?k=e[44]:(k=Ps(r.borders),e[43]=r.borders,e[44]=k);let A;e[45]===k?A=e[46]:(A=(0,H.jsxs)(Es,{children:[O,(0,H.jsx)(Os,{children:k})]}),e[45]=k,e[46]=A);let j;e[47]===Symbol.for(`react.memo_cache_sentinel`)?(j=(0,H.jsx)(Ds,{children:`Население`}),e[47]=j):j=e[47];let M;e[48]===r.population?M=e[49]:(M=r.population.toLocaleString(`ru-RU`),e[48]=r.population,e[49]=M);let te;e[50]===M?te=e[51]:(te=(0,H.jsxs)(Es,{children:[j,(0,H.jsxs)(Os,{children:[M,` чел.`]})]}),e[50]=M,e[51]=te);let ne;e[52]===Symbol.for(`react.memo_cache_sentinel`)?(ne=(0,H.jsx)(Ds,{children:`Религии`}),e[52]=ne):ne=e[52];let N;e[53]===f?N=e[54]:(N=(0,H.jsxs)(Es,{children:[ne,(0,H.jsx)(Os,{children:f})]}),e[53]=f,e[54]=N);let P;e[55]!==S||e[56]!==ee||e[57]!==D||e[58]!==A||e[59]!==te||e[60]!==N?(P=(0,H.jsxs)(Ts,{children:[S,ee,D,A,te,N]}),e[55]=S,e[56]=ee,e[57]=D,e[58]=A,e[59]=te,e[60]=N,e[61]=P):P=e[61];let re;return e[62]!==v||e[63]!==y||e[64]!==P?(re=(0,H.jsxs)(gs,{children:[v,y,P]}),e[62]=v,e[63]=y,e[64]=P,e[65]=re):re=e[65],re};function Is(e){return e.official}function Ls(e){return e.name}function Rs(e){return e.name}var zs=[{path:`/`,element:(0,H.jsx)(bo,{}),children:[{index:!0,element:(0,H.jsx)(rs,{})},{path:`login`,element:(0,H.jsx)(hs,{})},{path:`country/:name`,element:(0,H.jsx)(Fs,{})}]}],Bs=()=>ut(zs),Vs=`/countries/`.replace(/\/$/,``);function Hs(){let e=(0,Bn.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,H.jsx)(yn,{basename:Vs,children:(0,H.jsx)(Bs,{})}),e[0]=t):t=e[0],t}var Us=za`
+`;function js(e,t){return e?.length?e.join(`, `):t}function Ms(e){return e?.length?e.map(e=>xo(e)??e).join(`, `):`-`}var Ns=()=>{let e=(0,Bn.c)(66),{name:t}=ct(),n=it(),[r,i]=(0,C.useState)(),a,o;if(e[0]===t?(a=e[1],o=e[2]):(a=()=>{t&&Uo(t).then(e=>i(e)).catch(console.error)},o=[t],e[0]=t,e[1]=a,e[2]=o),(0,C.useEffect)(a,o),!t){let t;return e[3]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,H.jsx)(ms,{children:(0,H.jsx)(As,{children:`Не указана страна в адресе.`})}),e[3]=t):t=e[3],t}if(!r){let t;return e[4]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,H.jsx)(ms,{children:(0,H.jsxs)(Os,{"aria-live":`polite`,"aria-busy":`true`,children:[(0,H.jsx)(ks,{"aria-hidden":!0}),(0,H.jsx)(Ds,{children:`Загрузка…`})]})}),e[4]=t):t=e[4],t}let s;e[5]===r.name.nativeName?s=e[6]:(s=r.name.nativeName?Object.values(r.name.nativeName).map(Ps).join(`, `):`-`,e[5]=r.name.nativeName,e[6]=s);let c=s,l;e[7]===r.languages?l=e[8]:(l=r.languages?.map(Fs).join(`, `)||`-`,e[7]=r.languages,e[8]=l);let u=l,d;e[9]===r.religion?d=e[10]:(d=r.religion?.map(Is).join(`, `)||`-`,e[9]=r.religion,e[10]=d);let f=d,p;e[11]!==r.flag.alt||e[12]!==r.flag.png?(p=(0,H.jsx)(gs,{children:(0,H.jsx)(_s,{src:r.flag.png,alt:r.flag.alt,loading:`lazy`})}),e[11]=r.flag.alt,e[12]=r.flag.png,e[13]=p):p=e[13];let m;e[14]===r.name.common?m=e[15]:(m=(0,H.jsx)(ys,{children:r.name.common}),e[14]=r.name.common,e[15]=m);let h;e[16]===c?h=e[17]:(h=(0,H.jsx)(bs,{children:c}),e[16]=c,e[17]=h);let g;e[18]===r.cca3?g=e[19]:(g=(0,H.jsx)(xs,{children:r.cca3}),e[18]=r.cca3,e[19]=g);let _;e[20]!==m||e[21]!==h||e[22]!==g?(_=(0,H.jsxs)(vs,{children:[m,h,g]}),e[20]=m,e[21]=h,e[22]=g,e[23]=_):_=e[23];let v;e[24]!==p||e[25]!==_?(v=(0,H.jsxs)(hs,{children:[p,_]}),e[24]=p,e[25]=_,e[26]=v):v=e[26];let y;e[27]===n?y=e[28]:(y=(0,H.jsx)(Ss,{type:`button`,onClick:()=>n(-1),children:`Назад`}),e[27]=n,e[28]=y);let b;e[29]===Symbol.for(`react.memo_cache_sentinel`)?(b=(0,H.jsx)(Ts,{children:`Столица`}),e[29]=b):b=e[29];let x;e[30]===r.capital?x=e[31]:(x=js(r.capital,`-`),e[30]=r.capital,e[31]=x);let S;e[32]===x?S=e[33]:(S=(0,H.jsxs)(ws,{children:[b,(0,H.jsx)(Es,{children:x})]}),e[32]=x,e[33]=S);let w;e[34]===Symbol.for(`react.memo_cache_sentinel`)?(w=(0,H.jsx)(Ts,{children:`Континент`}),e[34]=w):w=e[34];let T;e[35]===r.continents?T=e[36]:(T=js(r.continents,`-`),e[35]=r.continents,e[36]=T);let ee;e[37]===T?ee=e[38]:(ee=(0,H.jsxs)(ws,{children:[w,(0,H.jsx)(Es,{children:T})]}),e[37]=T,e[38]=ee);let E;e[39]===Symbol.for(`react.memo_cache_sentinel`)?(E=(0,H.jsx)(Ts,{children:`Языки`}),e[39]=E):E=e[39];let D;e[40]===u?D=e[41]:(D=(0,H.jsxs)(ws,{children:[E,(0,H.jsx)(Es,{children:u})]}),e[40]=u,e[41]=D);let O;e[42]===Symbol.for(`react.memo_cache_sentinel`)?(O=(0,H.jsx)(Ts,{children:`Границы`}),e[42]=O):O=e[42];let k;e[43]===r.borders?k=e[44]:(k=Ms(r.borders),e[43]=r.borders,e[44]=k);let A;e[45]===k?A=e[46]:(A=(0,H.jsxs)(ws,{children:[O,(0,H.jsx)(Es,{children:k})]}),e[45]=k,e[46]=A);let j;e[47]===Symbol.for(`react.memo_cache_sentinel`)?(j=(0,H.jsx)(Ts,{children:`Население`}),e[47]=j):j=e[47];let M;e[48]===r.population?M=e[49]:(M=r.population.toLocaleString(`ru-RU`),e[48]=r.population,e[49]=M);let te;e[50]===M?te=e[51]:(te=(0,H.jsxs)(ws,{children:[j,(0,H.jsxs)(Es,{children:[M,` чел.`]})]}),e[50]=M,e[51]=te);let ne;e[52]===Symbol.for(`react.memo_cache_sentinel`)?(ne=(0,H.jsx)(Ts,{children:`Религии`}),e[52]=ne):ne=e[52];let N;e[53]===f?N=e[54]:(N=(0,H.jsxs)(ws,{children:[ne,(0,H.jsx)(Es,{children:f})]}),e[53]=f,e[54]=N);let P;e[55]!==S||e[56]!==ee||e[57]!==D||e[58]!==A||e[59]!==te||e[60]!==N?(P=(0,H.jsxs)(Cs,{children:[S,ee,D,A,te,N]}),e[55]=S,e[56]=ee,e[57]=D,e[58]=A,e[59]=te,e[60]=N,e[61]=P):P=e[61];let re;return e[62]!==v||e[63]!==y||e[64]!==P?(re=(0,H.jsxs)(ms,{children:[v,y,P]}),e[62]=v,e[63]=y,e[64]=P,e[65]=re):re=e[65],re};function Ps(e){return e.official}function Fs(e){return e.name}function Is(e){return e.name}var Ls=[{path:`/`,element:(0,H.jsx)(vo,{}),children:[{index:!0,element:(0,H.jsx)(ts,{})},{path:`login`,element:(0,H.jsx)(ps,{})},{path:`country/:name`,element:(0,H.jsx)(Ns,{})}]}],Rs=()=>ut(Ls),zs=`/countries/`.replace(/\/$/,``);function Bs(){let e=(0,Bn.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,H.jsx)(yn,{basename:zs,children:(0,H.jsx)(Rs,{})}),e[0]=t):t=e[0],t}var Vs=za`
   :root {
     --color-bg: #f8fafc;
     --color-surface: #ffffff;
@@ -854,4 +819,4 @@ Please change the parent <Route path="${e}"> to <Route path="${e===`/`?`*`:`${e}
     color: inherit;
     text-decoration: none;
   }
-`;(0,Vn.createRoot)(document.getElementById(`root`)).render((0,H.jsxs)(Ya,{children:[(0,H.jsx)(Us,{}),(0,H.jsx)(Hs,{})]}));
+`;(0,Vn.createRoot)(document.getElementById(`root`)).render((0,H.jsxs)(Ya,{children:[(0,H.jsx)(Vs,{}),(0,H.jsx)(Bs,{})]}));
