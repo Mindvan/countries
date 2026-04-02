@@ -257,13 +257,13 @@ export const Home = () => {
     const str = search.trim().toLowerCase()
     return [...data].filter((x) => {
       const matchesSearch =
-        x.name.official.toLowerCase().includes(str) ||
+        x.name.official.toLowerCase().startsWith(str) ||
         (x.name.nativeName &&
           Object.values(x.name.nativeName).some((y) =>
-            y.official.toLowerCase().includes(str),
+            y.official.toLowerCase().startsWith(str),
           ))
       const matchesContinent =
-        selectedContinent === '' || x.continents.includes(selectedContinent)
+        selectedContinent === '' || x.continents.some((y) => y.startsWith(selectedContinent))
       const matchesFavorites =
         !onlyFavorites ||
         !favoritesEnabled ||
@@ -320,10 +320,10 @@ export const Home = () => {
           ) : null}
           <SortButtonsRow>
             <SortButton onClick={() => setSortedType('asc')}>
-              По возрастанию
+              от А до Я
             </SortButton>
             <SortButton onClick={() => setSortedType('desc')}>
-              По убыванию
+              от Я до А
             </SortButton>
           </SortButtonsRow>
         </SortRow>
